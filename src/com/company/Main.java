@@ -19,7 +19,7 @@ public class Main {
         while(nextOperation) {
 
             // read numbers
-            System.out.print("Enter two numbers: ");
+            System.out.print("Please enter two values: ");
             num1 = scan.nextDouble();
             num2 = scan.nextDouble();
 
