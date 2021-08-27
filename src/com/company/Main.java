@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
         double num1=0.0, num2=0.0;
         double sum=0.0, sub=0.0, multiple=0.0;
         double divide=0.0, remainder=0.0, power=0.0;
@@ -13,11 +13,9 @@ public class Main {
         boolean nextOperation = true;
         char ch='\0';
 
-        // create Scanner class object to
-        // read inputs
+
         Scanner scan = new Scanner(System.in);
 
-        // loop to repeat the process
         while(nextOperation) {
 
             // read numbers
@@ -25,7 +23,7 @@ public class Main {
             num1 = scan.nextDouble();
             num2 = scan.nextDouble();
 
-            // read operation
+
             System.out.println("Which operation "
                     + "do you want to perform? \n"
                     + "Options are:- \n"
@@ -39,7 +37,7 @@ public class Main {
             System.out.print("Enter option number: ");
             operator = scan.next().charAt(0);
 
-            // switch-case
+
             switch(operator) {
 
                 case '1':
@@ -79,29 +77,25 @@ public class Main {
                     break;
 
                 case '7':
-                    // Shutdown JVM
                     System.exit(0);
 
                 default:
                     System.out.println("Invalid operator");
-            } // end of switch-case
-
-            // ask for continue
+            }
             System.out.println("\nDo you want to continue?");
             System.out.print("Enter Y/N:: ");
             ch = scan.next().charAt(0);
 
-            // continue when user enter 'y' or 'Y'
-            // convert input into upper-case and check
+
             if(Character.toUpperCase(ch)!='Y')
                 nextOperation = false;
 
             System.out.println(); // space
-        } // while loop
+        }
 
-        System.out.println("Thank You.");
+        System.out.println("Thank you for choosing our product!");
 
-        // close Scanner class object
+
         scan.close();
     }
 
