@@ -38,7 +38,7 @@ public class Main {
             operator = scan.next().charAt(0);
 
 
-            switch(operator) {
+            switch (operator) {
 
                 case '1':
                     sum = add(num1, num2);
@@ -93,7 +93,7 @@ public class Main {
             System.out.println(); // space
         }
 
-        System.out.println("Thank you for choosing our product!");
+        System.out.println("Thank you for choosing our calculator!");
 
 
         scan.close();
